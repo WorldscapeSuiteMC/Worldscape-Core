@@ -4,4 +4,6 @@ public abstract class Entity {
 
     public double health = 20.0D;
 
+
+    abstract void doSomething(double amount);
 }
