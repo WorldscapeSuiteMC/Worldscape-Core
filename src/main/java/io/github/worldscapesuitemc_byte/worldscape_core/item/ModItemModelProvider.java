@@ -60,7 +60,31 @@ public class ModItemModelProvider extends ModelProvider
 
                 ModItems.CRYSTALLIZED_COPPER,
                 ModItems.CRYSTALLIZED_IRON,
-                ModItems.CRYSTALLIZED_GOLD
+                ModItems.CRYSTALLIZED_GOLD,
+
+                ModItems.LEAD_INGOT,
+                ModItems.LITHIUM_INGOT,
+                ModItems.PRYSMAGNETAL_INGOT,
+                ModItems.SIGNALIUM_INGOT,
+                ModItems.SILVER_INGOT,
+                ModItems.STEEL_INGOT,
+                ModItems.TITANIUM_INGOT,
+                ModItems.TRITANIUM_INGOT,
+                ModItems.UNUNTRIUM_INGOT,
+                ModItems.URANIUM_INGOT,
+
+                ModItems.LEAD_NUGGET,
+                ModItems.LITHIUM_NUGGET,
+                ModItems.PRYSMAGNETAL_NUGGET,
+                ModItems.SIGNALIUM_NUGGET,
+                ModItems.SILVER_NUGGET,
+                ModItems.STEEL_NUGGET,
+                ModItems.TITANIUM_NUGGET,
+                ModItems.TRITANIUM_NUGGET,
+                ModItems.UNUNTRIUM_NUGGET,
+                ModItems.URANIUM_NUGGET,
+
+                ModItems.DIAMOND_SHARD
         );
     }
 
@@ -104,10 +128,33 @@ public class ModItemModelProvider extends ModelProvider
         itemModels.generateFlatItem(ModItems.CRYSTALLIZED_TRITANIUM.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CRYSTALLIZED_UNUNTRIUM.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CRYSTALLIZED_URANIUM.get(), ModelTemplates.FLAT_ITEM);
-        
+
         itemModels.generateFlatItem(ModItems.CRYSTALLIZED_COPPER.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CRYSTALLIZED_IRON.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CRYSTALLIZED_GOLD.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModels.generateFlatItem(ModItems.LEAD_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.LITHIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.PRYSMAGNETAL_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SIGNALIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SILVER_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.STEEL_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TITANIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TRITANIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.UNUNTRIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.URANIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.LEAD_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.LITHIUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.PRYSMAGNETAL_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SIGNALIUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SILVER_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.STEEL_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TITANIUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TRITANIUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.UNUNTRIUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.URANIUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.DIAMOND_SHARD.get(), ModelTemplates.FLAT_ITEM);
     }
 }

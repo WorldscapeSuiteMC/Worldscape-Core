@@ -55,4 +55,28 @@ public class ModItems {
     public static final DeferredItem<Item> CRYSTALLIZED_COPPER = ITEMS.registerSimpleItem("crystallized_copper");
     public static final DeferredItem<Item> CRYSTALLIZED_IRON = ITEMS.registerSimpleItem("crystallized_iron");
     public static final DeferredItem<Item> CRYSTALLIZED_GOLD = ITEMS.registerSimpleItem("crystallized_gold");
+
+    public static final DeferredItem<Item> LEAD_INGOT = ITEMS.registerSimpleItem("lead_ingot");
+    public static final DeferredItem<Item> LITHIUM_INGOT = ITEMS.registerSimpleItem("lithium_ingot");
+    public static final DeferredItem<Item> PRYSMAGNETAL_INGOT = ITEMS.registerSimpleItem("prysmagnetal_ingot");
+    public static final DeferredItem<Item> SIGNALIUM_INGOT = ITEMS.registerSimpleItem("signalium_ingot");
+    public static final DeferredItem<Item> SILVER_INGOT = ITEMS.registerSimpleItem("silver_ingot");
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.registerSimpleItem("steel_ingot");
+    public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.registerSimpleItem("titanium_ingot");
+    public static final DeferredItem<Item> TRITANIUM_INGOT = ITEMS.registerSimpleItem("tritanium_ingot");
+    public static final DeferredItem<Item> UNUNTRIUM_INGOT = ITEMS.registerSimpleItem("ununtrium_ingot");
+    public static final DeferredItem<Item> URANIUM_INGOT = ITEMS.registerSimpleItem("uranium_ingot");
+
+    public static final DeferredItem<Item> LEAD_NUGGET = ITEMS.registerSimpleItem("lead_nugget");
+    public static final DeferredItem<Item> LITHIUM_NUGGET = ITEMS.registerSimpleItem("lithium_nugget");
+    public static final DeferredItem<Item> PRYSMAGNETAL_NUGGET = ITEMS.registerSimpleItem("prysmagnetal_nugget");
+    public static final DeferredItem<Item> SIGNALIUM_NUGGET = ITEMS.registerSimpleItem("signalium_nugget");
+    public static final DeferredItem<Item> SILVER_NUGGET = ITEMS.registerSimpleItem("silver_nugget");
+    public static final DeferredItem<Item> STEEL_NUGGET = ITEMS.registerSimpleItem("steel_nugget");
+    public static final DeferredItem<Item> TITANIUM_NUGGET = ITEMS.registerSimpleItem("titanium_nugget");
+    public static final DeferredItem<Item> TRITANIUM_NUGGET = ITEMS.registerSimpleItem("tritanium_nugget");
+    public static final DeferredItem<Item> UNUNTRIUM_NUGGET = ITEMS.registerSimpleItem("ununtrium_nugget");
+    public static final DeferredItem<Item> URANIUM_NUGGET = ITEMS.registerSimpleItem("uranium_nugget");
+
+    public static final DeferredItem<Item> DIAMOND_SHARD = ITEMS.registerSimpleItem("diamond_shard");
 }

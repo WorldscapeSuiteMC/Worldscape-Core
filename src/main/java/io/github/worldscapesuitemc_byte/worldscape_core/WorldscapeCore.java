@@ -84,6 +84,30 @@ public class WorldscapeCore {
                 output.accept(ModItems.CRYSTALLIZED_COPPER.get());
                 output.accept(ModItems.CRYSTALLIZED_IRON.get());
                 output.accept(ModItems.CRYSTALLIZED_GOLD.get());
+
+                output.accept(ModItems.LEAD_INGOT.get());
+                output.accept(ModItems.LITHIUM_INGOT.get());
+                output.accept(ModItems.PRYSMAGNETAL_INGOT.get());
+                output.accept(ModItems.SIGNALIUM_INGOT.get());
+                output.accept(ModItems.SILVER_INGOT.get());
+                output.accept(ModItems.STEEL_INGOT.get());
+                output.accept(ModItems.TITANIUM_INGOT.get());
+                output.accept(ModItems.TRITANIUM_INGOT.get());
+                output.accept(ModItems.UNUNTRIUM_INGOT.get());
+                output.accept(ModItems.URANIUM_INGOT.get());
+
+                output.accept(ModItems.LEAD_NUGGET.get());
+                output.accept(ModItems.LITHIUM_NUGGET.get());
+                output.accept(ModItems.PRYSMAGNETAL_NUGGET.get());
+                output.accept(ModItems.SIGNALIUM_NUGGET.get());
+                output.accept(ModItems.SILVER_NUGGET.get());
+                output.accept(ModItems.STEEL_NUGGET.get());
+                output.accept(ModItems.TITANIUM_NUGGET.get());
+                output.accept(ModItems.TRITANIUM_NUGGET.get());
+                output.accept(ModItems.UNUNTRIUM_NUGGET.get());
+                output.accept(ModItems.URANIUM_NUGGET.get());
+
+                output.accept(ModItems.DIAMOND_SHARD.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

@@ -12,7 +12,6 @@
   "item.worldscape_core.raw_tritanium": "Raw Tritanium",
   "item.worldscape_core.raw_ununtrium": "Raw Ununtrium",
   "item.worldscape_core.raw_uranium": "Raw Uranium",
-
   "item.worldscape_core.crushed_lead": "Crushed lead",
   "item.worldscape_core.crushed_lithium": "Crushed Lithium",
   "item.worldscape_core.crushed_prysmagnetal": "Crushed Prysmagnetal",
@@ -23,11 +22,9 @@
   "item.worldscape_core.crushed_tritanium": "Crushed Tritanium",
   "item.worldscape_core.crushed_ununtrium": "Crushed Ununtrium",
   "item.worldscape_core.crushed_uranium": "Crushed Uranium",
-
   "item.worldscape_core.crushed_copper": "Crushed Copper",
   "item.worldscape_core.crushed_iron": "Crushed Iron",
   "item.worldscape_core.crushed_gold": "Crushed Gold",
-
   "item.worldscape_core.crystallized_lead": "Crystallized Lead",
   "item.worldscape_core.crystallized_lithium": "Crystallized Lithium",
   "item.worldscape_core.crystallized_prysmagnetal": "Crystallized Prysmagnetal",
@@ -38,8 +35,31 @@
   "item.worldscape_core.crystallized_tritanium": "Crystallized Tritanium",
   "item.worldscape_core.crystallized_ununtrium": "Crystallized Ununtrium",
   "item.worldscape_core.crystallized_uranium": "Crystallized Uranium",
-
   "item.worldscape_core.crystallized_copper": "Crystallized Copper",
   "item.worldscape_core.crystallized_iron": "Crystallized Iron",
-  "item.worldscape_core.crystallized_gold": "Crystallized Gold"
+  "item.worldscape_core.crystallized_gold": "Crystallized Gold",
+
+  "item.worldscape_core.lead_ingot": "Lead Ingot",
+  "item.worldscape_core.lithium_ingot": "Lithium Ingot",
+  "item.worldscape_core.prysmagnetal_ingot": "Prysmagnetal Ingot",
+  "item.worldscape_core.signalium_ingot": "Signalium Ingot",
+  "item.worldscape_core.silver_ingot": "Silver Ingot",
+  "item.worldscape_core.steel_ingot": "Steel Ingot",
+  "item.worldscape_core.titanium_ingot": "Titanium Ingot",
+  "item.worldscape_core.tritanium_ingot": "Tritanium Ingot",
+  "item.worldscape_core.ununtrium_ingot": "Ununtrium Ingot",
+  "item.worldscape_core.uranium_ingot": "Uranium Ingot",
+
+  "item.worldscape_core.lead_nugget": "Lead Nugget",
+  "item.worldscape_core.lithium_nugget": "Lithium Nugget",
+  "item.worldscape_core.prysmagnetal_nugget": "Prysmagnetal Nugget",
+  "item.worldscape_core.signalium_nugget": "Signalium Nugget",
+  "item.worldscape_core.silver_nugget": "Silver Nugget",
+  "item.worldscape_core.steel_nugget": "Steel Nugget",
+  "item.worldscape_core.titanium_nugget": "Titanium Nugget",
+  "item.worldscape_core.tritanium_nugget": "Tritanium Nugget",
+  "item.worldscape_core.ununtrium_nugget": "Ununtrium Nugget",
+  "item.worldscape_core.uranium_nugget": "Uranium Nugget",
+
+  "item.worldscape_core.diamond_shard": "Diamond Shard"
 }
