@@ -1,16 +1,14 @@
 package io.github.worldscapesuitemc_byte.worldscape_core;
 
-import io.github.worldscapesuitemc_byte.worldscape_core.item.ModAppleItem;
+import io.github.worldscapesuitemc_byte.worldscape_core.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -20,7 +18,6 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -33,24 +30,28 @@ public class WorldscapeCore {
 
     // Create a Deferred Register to hold Blocks which will all be registered under the "worldscape_core" namespace
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
-    // Create a Deferred Register to hold Items which will all be registered under the "worldscape_core" namespace
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "worldscape_core" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-
-
-    // Creates a new food item with the id "worldscape_core:example_id", nutrition 1 and saturation 2
-    public static final DeferredItem<Item> MOD_APPLE = ITEMS.registerItem("mod_apple", ModAppleItem::new, p -> p.food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
 
     // Creates a creative tab with the id "worldscape_core:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + MODID)) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> MOD_APPLE.get().getDefaultInstance())
+            .icon(() -> ModItems.MOD_APPLE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(MOD_APPLE.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModItems.MOD_APPLE.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModItems.ENRICHED_IRON.get());
+                output.accept(ModItems.RAW_GALENA.get());
+                output.accept(ModItems.RAW_LEAD.get());
+                output.accept(ModItems.RAW_LITHIUM.get());
+                output.accept(ModItems.RAW_SIGNALIUM.get());
+                output.accept(ModItems.RAW_SILICA.get());
+                output.accept(ModItems.RAW_SILVER.get());
+                output.accept(ModItems.RAW_TITANIUM.get());
+                output.accept(ModItems.RAW_TRITANIUM.get());
+                output.accept(ModItems.RAW_UNUNTRIUM.get());
+                output.accept(ModItems.RAW_URANIUM.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -62,7 +63,7 @@ public class WorldscapeCore {
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
