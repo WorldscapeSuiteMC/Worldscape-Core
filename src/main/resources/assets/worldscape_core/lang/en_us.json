@@ -1,7 +1,28 @@
 {
   "itemGroup.worldscape_core": "Main",
   "item.worldscape_core.mod_apple": "Mod Apple",
-  "item.worldscape_core.enriched_iron": "Enriched Iron"
-
-
+  "item.worldscape_core.enriched_iron": "Enriched Iron",
+  "item.worldscape_core.raw_galena": "Raw Galena",
+  "item.worldscape_core.raw_lead": "Raw Lead",
+  "item.worldscape_core.raw_lithium": "Raw Lithium",
+  "item.worldscape_core.raw_signalium": "Raw Signaliun",
+  "item.worldscape_core.raw_silica": "Raw Silica",
+  "item.worldscape_core.raw_silver": "Raw Silver",
+  "item.worldscape_core.raw_titanium": "Raw Titanium",
+  "item.worldscape_core.raw_tritanium": "Raw Tritanium",
+  "item.worldscape_core.raw_ununtrium": "Raw Ununtrium",
+  "item.worldscape_core.raw_uranium": "Raw Uranium",
+  "item.worldscape_core.crushed_lead": "Crushed lead",
+  "item.worldscape_core.crushed_lithium": "Crushed Lithium",
+  "item.worldscape_core.crushed_prysmagnetal": "Crushed Prysmagnetal",
+  "item.worldscape_core.crushed_signalium": "Crushed Signalium",
+  "item.worldscape_core.crushed_silver": "Crushed Silver",
+  "item.worldscape_core.crushed_steel": "Crushed Steel",
+  "item.worldscape_core.crushed_titanium": "Crushed Titanium",
+  "item.worldscape_core.crushed_tritanium": "Crushed Tritanium",
+  "item.worldscape_core.crushed_ununtrium": "Crushed Ununtrium",
+  "item.worldscape_core.crushed_uranium": "Crushed Uranium",
+  "item.worldscape_core.crushed_copper": "Crushed Copper",
+  "item.worldscape_core.crushed_iron": "Crushed Iron",
+  "item.worldscape_core.crushed_gold": "Crushed Gold"
 }

@@ -17,6 +17,7 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_GALENA = ITEMS.registerSimpleItem("raw_galena");
     public static final DeferredItem<Item> RAW_LEAD = ITEMS.registerSimpleItem("raw_lead");
     public static final DeferredItem<Item> RAW_LITHIUM = ITEMS.registerSimpleItem("raw_lithium");
+    public static final DeferredItem<Item> PRYSMAGNETAL_SHARD = ITEMS.registerSimpleItem("prysmagnetal_shard");
     public static final DeferredItem<Item> RAW_SIGNALIUM = ITEMS.registerSimpleItem("raw_signalium");
     public static final DeferredItem<Item> RAW_SILICA = ITEMS.registerSimpleItem("raw_silica");
     public static final DeferredItem<Item> RAW_SILVER = ITEMS.registerSimpleItem("raw_silver");
@@ -24,4 +25,29 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_TRITANIUM = ITEMS.registerSimpleItem("raw_tritanium");
     public static final DeferredItem<Item> RAW_UNUNTRIUM = ITEMS.registerSimpleItem("raw_ununtrium");
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.registerSimpleItem("raw_uranium");
+    public static final DeferredItem<Item> CRUSHED_LEAD = ITEMS.registerSimpleItem("crushed_lead");
+    public static final DeferredItem<Item> CRUSHED_LITHIUM = ITEMS.registerSimpleItem("crushed_lithium");
+    public static final DeferredItem<Item> CRUSHED_PRYSMAGNETAL = ITEMS.registerSimpleItem("crushed_prysmagnetal");
+    public static final DeferredItem<Item> CRUSHED_SIGNALIUM = ITEMS.registerSimpleItem("crushed_signalium");
+    public static final DeferredItem<Item> CRUSHED_SILVER = ITEMS.registerSimpleItem("crushed_silver");
+    public static final DeferredItem<Item> CRUSHED_STEEL = ITEMS.registerSimpleItem("crushed_steel");
+    public static final DeferredItem<Item> CRUSHED_TITANIUM = ITEMS.registerSimpleItem("crushed_titanium");
+    public static final DeferredItem<Item> CRUSHED_TRITANIUM = ITEMS.registerSimpleItem("crushed_tritanium");
+    public static final DeferredItem<Item> CRUSHED_UNUNTRIUM = ITEMS.registerSimpleItem("crushed_ununtrium");
+    public static final DeferredItem<Item> CRUSHED_URANIUM = ITEMS.registerSimpleItem("crushed_uranium");
+    public static final DeferredItem<Item> CRUSHED_COPPER = ITEMS.registerSimpleItem("crushed_copper");
+    public static final DeferredItem<Item> CRUSHED_IRON = ITEMS.registerSimpleItem("crushed_iron");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
+    public static final DeferredItem<Item> CRUSHED_GOLD = ITEMS.registerSimpleItem("crushed_gold");
 }

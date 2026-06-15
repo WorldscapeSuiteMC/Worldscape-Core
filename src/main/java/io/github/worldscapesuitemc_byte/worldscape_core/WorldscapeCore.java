@@ -45,6 +45,7 @@ public class WorldscapeCore {
                 output.accept(ModItems.RAW_GALENA.get());
                 output.accept(ModItems.RAW_LEAD.get());
                 output.accept(ModItems.RAW_LITHIUM.get());
+                output.accept(ModItems.PRYSMAGNETAL_SHARD.get());
                 output.accept(ModItems.RAW_SIGNALIUM.get());
                 output.accept(ModItems.RAW_SILICA.get());
                 output.accept(ModItems.RAW_SILVER.get());
@@ -52,6 +53,19 @@ public class WorldscapeCore {
                 output.accept(ModItems.RAW_TRITANIUM.get());
                 output.accept(ModItems.RAW_UNUNTRIUM.get());
                 output.accept(ModItems.RAW_URANIUM.get());
+                output.accept(ModItems.CRUSHED_LEAD.get());
+                output.accept(ModItems.CRUSHED_LITHIUM.get());
+                output.accept(ModItems.CRUSHED_PRYSMAGNETAL.get());
+                output.accept(ModItems.CRUSHED_SIGNALIUM.get());
+                output.accept(ModItems.CRUSHED_SILVER.get());
+                output.accept(ModItems.CRUSHED_STEEL.get());
+                output.accept(ModItems.CRUSHED_TITANIUM.get());
+                output.accept(ModItems.CRUSHED_TRITANIUM.get());
+                output.accept(ModItems.CRUSHED_UNUNTRIUM.get());
+                output.accept(ModItems.CRUSHED_URANIUM.get());
+                output.accept(ModItems.CRUSHED_COPPER.get());
+                output.accept(ModItems.CRUSHED_IRON.get());
+                output.accept(ModItems.CRUSHED_GOLD.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
