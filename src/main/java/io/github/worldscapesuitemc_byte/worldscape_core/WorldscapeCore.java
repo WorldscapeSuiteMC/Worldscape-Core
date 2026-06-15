@@ -41,6 +41,7 @@ public class WorldscapeCore {
             .icon(() -> ModItems.MOD_APPLE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.MOD_APPLE.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+
                 output.accept(ModItems.ENRICHED_IRON.get());
                 output.accept(ModItems.RAW_GALENA.get());
                 output.accept(ModItems.RAW_LEAD.get());
@@ -53,6 +54,7 @@ public class WorldscapeCore {
                 output.accept(ModItems.RAW_TRITANIUM.get());
                 output.accept(ModItems.RAW_UNUNTRIUM.get());
                 output.accept(ModItems.RAW_URANIUM.get());
+
                 output.accept(ModItems.CRUSHED_LEAD.get());
                 output.accept(ModItems.CRUSHED_LITHIUM.get());
                 output.accept(ModItems.CRUSHED_PRYSMAGNETAL.get());
@@ -63,9 +65,25 @@ public class WorldscapeCore {
                 output.accept(ModItems.CRUSHED_TRITANIUM.get());
                 output.accept(ModItems.CRUSHED_UNUNTRIUM.get());
                 output.accept(ModItems.CRUSHED_URANIUM.get());
+
                 output.accept(ModItems.CRUSHED_COPPER.get());
                 output.accept(ModItems.CRUSHED_IRON.get());
                 output.accept(ModItems.CRUSHED_GOLD.get());
+
+                output.accept(ModItems.CRYSTALLIZED_LEAD.get());
+                output.accept(ModItems.CRYSTALLIZED_LITHIUM.get());
+                output.accept(ModItems.CRYSTALLIZED_PRYSMAGNETAL.get());
+                output.accept(ModItems.CRYSTALLIZED_SIGNALIUM.get());
+                output.accept(ModItems.CRYSTALLIZED_SILVER.get());
+                output.accept(ModItems.CRYSTALLIZED_STEEL.get());
+                output.accept(ModItems.CRYSTALLIZED_TITANIUM.get());
+                output.accept(ModItems.CRYSTALLIZED_TRITANIUM.get());
+                output.accept(ModItems.CRYSTALLIZED_UNUNTRIUM.get());
+                output.accept(ModItems.CRYSTALLIZED_URANIUM.get());
+
+                output.accept(ModItems.CRYSTALLIZED_COPPER.get());
+                output.accept(ModItems.CRYSTALLIZED_IRON.get());
+                output.accept(ModItems.CRYSTALLIZED_GOLD.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
