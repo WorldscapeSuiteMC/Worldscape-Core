@@ -2,7 +2,9 @@ package io.github.worldscapesuitemc_byte.worldscape_core.item;
 
 import io.github.worldscapesuitemc_byte.worldscape_core.WorldscapeCore;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -79,4 +81,5 @@ public class ModItems {
     public static final DeferredItem<Item> URANIUM_NUGGET = ITEMS.registerSimpleItem("uranium_nugget");
 
     public static final DeferredItem<Item> DIAMOND_SHARD = ITEMS.registerSimpleItem("diamond_shard");
+    public static final DeferredItem<BlockItem> THE_PORTAL = ITEMS.registerSimpleBlockItem("the_portal", () -> Blocks.END_PORTAL);
 }

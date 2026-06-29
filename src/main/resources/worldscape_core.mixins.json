@@ -2,7 +2,13 @@
   "required": true,
   "package": "io.github.worldscapesuitemc_byte.worldscape_core.mixin",
   "compatibilityLevel": "JAVA_25",
-  "mixins": [],
+  "mixins": [
+    "TheEndPortalBlockEntityMixin",
+    "TheEndPortalBlockMixin"
+  ],
+  "client": [
+    "TheEndPortalRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

@@ -1,6 +1,13 @@
 package io.github.worldscapesuitemc_byte.worldscape_core;
 
+import io.github.worldscapesuitemc_byte.worldscape_core.entity.ModEntities;
+import io.github.worldscapesuitemc_byte.worldscape_core.entity.PredalienQueenModel;
+import io.github.worldscapesuitemc_byte.worldscape_core.entity.PredalienQueenRenderer;
 import io.github.worldscapesuitemc_byte.worldscape_core.item.ModItems;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -108,6 +115,7 @@ public class WorldscapeCore {
                 output.accept(ModItems.URANIUM_NUGGET.get());
 
                 output.accept(ModItems.DIAMOND_SHARD.get());
+                output.accept(ModItems.THE_PORTAL.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -115,12 +123,14 @@ public class WorldscapeCore {
     public WorldscapeCore(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::createDefaultAttributes);
+        modEventBus.addListener(this::registerLayerDefinitions);
+        modEventBus.addListener(this::registerEntityRenderers);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         ModItems.ITEMS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
+        ModEntities.ENTITY_TYPES.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
@@ -146,5 +156,34 @@ public class WorldscapeCore {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    public void createDefaultAttributes(EntityAttributeCreationEvent event) {
+        event.put(
+                // Your entity type.
+                ModEntities.ALIEN.get(),
+                // An AttributeSupplier. This is typically created by calling LivingEntity#createLivingAttributes,
+                // setting your values on it, and calling #build. You can also create the AttributeSupplier from scratch
+                // if you want, see the source of LivingEntity#createLivingAttributes for an example.
+                LivingEntity.createLivingAttributes()
+                        // Add an attribute with its default value.
+                        .add(Attributes.MAX_HEALTH)
+                        // Add an attribute with a non-default value.
+                        .add(Attributes.MAX_HEALTH, 50)
+                        // Build the AttributeSupplier.
+                        .build()
+        );
+    }
+    // on the mod event bus only on the physical client
+    public void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        // Add our layer here.
+        // event.add(MY_LAYER, MyEntityModel::createBodyLayer);
+        event.registerLayerDefinition(PredalienQueenModel.LAYER_LOCATION, PredalienQueenModel::createBodyLayer);
+    }
+
+    // on the mod event bus only on the physical client
+
+    public void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.ALIEN.get(), PredalienQueenRenderer::new);
     }
 }
