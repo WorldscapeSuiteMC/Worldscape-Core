@@ -12,6 +12,7 @@
   "item.worldscape_core.raw_tritanium": "Raw Tritanium",
   "item.worldscape_core.raw_ununtrium": "Raw Ununtrium",
   "item.worldscape_core.raw_uranium": "Raw Uranium",
+
   "item.worldscape_core.crushed_lead": "Crushed lead",
   "item.worldscape_core.crushed_lithium": "Crushed Lithium",
   "item.worldscape_core.crushed_prysmagnetal": "Crushed Prysmagnetal",
@@ -22,9 +23,11 @@
   "item.worldscape_core.crushed_tritanium": "Crushed Tritanium",
   "item.worldscape_core.crushed_ununtrium": "Crushed Ununtrium",
   "item.worldscape_core.crushed_uranium": "Crushed Uranium",
+
   "item.worldscape_core.crushed_copper": "Crushed Copper",
   "item.worldscape_core.crushed_iron": "Crushed Iron",
   "item.worldscape_core.crushed_gold": "Crushed Gold",
+
   "item.worldscape_core.crystallized_lead": "Crystallized Lead",
   "item.worldscape_core.crystallized_lithium": "Crystallized Lithium",
   "item.worldscape_core.crystallized_prysmagnetal": "Crystallized Prysmagnetal",
@@ -35,6 +38,7 @@
   "item.worldscape_core.crystallized_tritanium": "Crystallized Tritanium",
   "item.worldscape_core.crystallized_ununtrium": "Crystallized Ununtrium",
   "item.worldscape_core.crystallized_uranium": "Crystallized Uranium",
+
   "item.worldscape_core.crystallized_copper": "Crystallized Copper",
   "item.worldscape_core.crystallized_iron": "Crystallized Iron",
   "item.worldscape_core.crystallized_gold": "Crystallized Gold",
