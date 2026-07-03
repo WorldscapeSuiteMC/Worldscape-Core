@@ -81,5 +81,4 @@ public class ModItems {
     public static final DeferredItem<Item> URANIUM_NUGGET = ITEMS.registerSimpleItem("uranium_nugget");
 
     public static final DeferredItem<Item> DIAMOND_SHARD = ITEMS.registerSimpleItem("diamond_shard");
-    public static final DeferredItem<BlockItem> THE_PORTAL = ITEMS.registerSimpleBlockItem("the_portal", () -> Blocks.END_PORTAL);
 }
