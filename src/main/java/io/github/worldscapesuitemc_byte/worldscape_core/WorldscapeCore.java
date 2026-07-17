@@ -1,11 +1,12 @@
 package io.github.worldscapesuitemc_byte.worldscape_core;
 
 import io.github.worldscapesuitemc_byte.worldscape_core.item.ModItems;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,13 +36,16 @@ public class WorldscapeCore {
 
     // Create a Deferred Register to hold Blocks which will all be registered under the "worldscape_core" namespace
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
+
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "worldscape_core" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MODID);
+
 
 
     // Creates a creative tab with the id "worldscape_core:example_tab" for the example item, that is placed after the combat tab
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + MODID)) //The language key for the title of your CreativeModeTab
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = WorldscapeCore.CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + WorldscapeCore.MODID)) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ModItems.MOD_APPLE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -124,9 +128,9 @@ public class WorldscapeCore {
         modEventBus.addListener(this::registerEntityRenderers);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
-        CREATIVE_MODE_TABS.register(modEventBus);
+        WorldscapeCore.CREATIVE_MODE_TABS.register(modEventBus);
+        WorldscapeCore.BLOCK_ENTITIES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (WorldscapeCore) to respond directly to events.
@@ -155,14 +159,9 @@ public class WorldscapeCore {
 
 
     // on the mod event bus only on the physical client
-    public void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        // Add our layer here.
-        // event.add(MY_LAYER, MyEntityModel::createBodyLayer);
-
-    }
+    public void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {}
 
     // on the mod event bus only on the physical client
 
-    public void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-    }
+    public void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {}
 }
